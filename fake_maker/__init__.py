@@ -1,1 +1,1 @@
-from fake import FakeMake
+from .fake import FakeMake
