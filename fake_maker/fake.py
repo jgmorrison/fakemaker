@@ -22,7 +22,7 @@ class FakeMake(object):
 
     def personal_data(self, amount):
         file = open('fakemaker.csv', 'w')
-        file.write('First_Name, Last_Name, Address, City, State, Zip, Joined, Age, Gender, Email\n')
+        file.write('First_Name,Last_Name,Address,City,State,Zip,Joined,Age,Gender,Email\n')
 
         for run in range(amount):
             gender = self._gender()
