@@ -24,6 +24,6 @@ Simply pass the amount of rows as an argument to the personal_data() function at
 
 ``Edmon,Robel,39585 Abbott Pass Apt. 256,Stanburgh,MP,98269,2000-07-18,70,Male,zsawayn@yahoo.com``
 
-``Brandy,Kling,497 Son Key Apt. 168,Deckowside,OK,79522,2009-10-30,77,Male,fsmitham@gutmann.com``
+``Brandy,Kling,497 Son Key Apt. 168,Deckowside,OK,79522,2009-10-30,77,Female,fsmitham@gutmann.com``
 
 ``Jeanette,Smith,6171 Bins Extension,Dolahaven,NY,74042,2001-11-13,52,Female,wongcollins@gmail.com``
