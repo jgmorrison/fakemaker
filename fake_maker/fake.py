@@ -1,5 +1,5 @@
+from random import randint
 from faker import Faker
-import random
 
 
 class FakeMake(object):
@@ -8,10 +8,10 @@ class FakeMake(object):
         self.fake = Faker()
 
     def _gender(self):
-        x = random.randint(1, 2)
-        if x == 1:
+        selection = randint(1, 2)
+        if selection == 1:
             return "Male"
-        elif x == 2:
+        elif selection == 2:
             return "Female"
 
     def _first_name(self, gender):
@@ -21,25 +21,25 @@ class FakeMake(object):
             return self.fake.first_name_female()
 
     def personal_data(self, amount):
-        file = open('fakemaker.csv', 'w')
-        file.write('First_Name,Last_Name,Address,City,State,Zip,Joined,\
+        fake_file = open('fakemaker.csv', 'w')
+        fake_file.write('First_Name,Last_Name,Address,City,State,Zip,Joined,\
 Age,Gender,Email\n')
 
-        for run in range(amount):
+        for i in range(amount):
             gender = self._gender()
             data = [self._first_name(gender), self.fake.last_name(),
                     self.fake.street_address(), self.fake.city(),
-                    self.fake.state_abbr(), self.fake.postalcode(),
-                    self.fake.date(), str(random.randint(18, 90)), gender,
+                    self.fake.state_abbr(), str(randint(10000, 99500)),
+                    self.fake.date(), str(randint(18, 90)), gender,
                     self.fake.email(), "\n"]
 
             for item in data:
                 if item == data[-2] or item == data[-1]:
-                    file.write(item)
+                    fake_file.write(item)
                 else:
-                    file.write(item + ",")
+                    fake_file.write(item + ",")
 
-        file.close()
+        fake_file.close()
 
 #    call the make function so that it is automatic on instantiation /
 #    with amount.
