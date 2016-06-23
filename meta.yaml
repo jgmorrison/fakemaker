@@ -1,9 +1,17 @@
 package:
+<<<<<<< HEAD
   name: fakemaker
   version: {{ environ.get('GIT_DESCRIBE_TAG', 'failed')}}
 
 source:
   #git_url: https://github.com/jgmorrison/fakemaker.git
+=======
+  name: fake_maker
+  version: {{ environ.get('GIT_DESCRIBE_TAG', 'failed')}}
+
+source:
+  #git_url: https://github.com/jgmorrison/fake_maker.git
+>>>>>>> 7639aa97c757e5aeb094a8fcde7869ad4e6ddd4b
   git_url: .
 
 requirements:
@@ -16,5 +24,9 @@ requirements:
 
 test:
   imports:
+<<<<<<< HEAD
     - fakemaker
+=======
+    - fake_maker
+>>>>>>> 7639aa97c757e5aeb094a8fcde7869ad4e6ddd4b
 

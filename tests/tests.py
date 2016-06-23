@@ -1,6 +1,10 @@
 import unittest
 import os
+<<<<<<< HEAD
 import fakemaker
+=======
+import fake_maker
+>>>>>>> 7639aa97c757e5aeb094a8fcde7869ad4e6ddd4b
 from random import randint
 
 class TestFakeMake(unittest.TestCase):
@@ -8,7 +12,11 @@ class TestFakeMake(unittest.TestCase):
     #Verify that fakemaker.csv was created in current working directory.
     def test_for_file(self):
         def file_check():
+<<<<<<< HEAD
             test_inst = fakemaker.FakeMake()
+=======
+            test_inst = fake_maker.FakeMake()
+>>>>>>> 7639aa97c757e5aeb094a8fcde7869ad4e6ddd4b
             test_inst.personal_data(1)
             if 'fakemaker.csv' in os.listdir('./'):
                 return True
@@ -24,7 +32,11 @@ class TestFakeMake(unittest.TestCase):
     def test_row_amount(self):
         def line_count():
             amount = randint(2, 20)
+<<<<<<< HEAD
             test_inst = fakemaker.FakeMake()
+=======
+            test_inst = fake_maker.FakeMake()
+>>>>>>> 7639aa97c757e5aeb094a8fcde7869ad4e6ddd4b
             test_inst.personal_data(amount)
             test_file = open('fakemaker.csv', 'r').readlines()
             count = 0

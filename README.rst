@@ -6,15 +6,25 @@ Easily make a CSV with individual personal data for as many rows as needed. Usef
 
 **Installation:**
 
+<<<<<<< HEAD
     ``pip install git+https://github.com/jgmorrison/fakemaker.git``
+=======
+    ``pip install git+https://github.com/jgmorrison/fake_maker.git``
+>>>>>>> 7639aa97c757e5aeb094a8fcde7869ad4e6ddd4b
 
 **Usage:**
 
 Simply pass the amount of rows as an argument to the personal_data() function attached to an instance of FakeMake(). The result will be a useable CSV file named fakemaker.csv in your current working directory.
 
+<<<<<<< HEAD
    ``from fakemaker Import FakeMake``
 
    ``fake = FakeMake()``
+=======
+   ``from fake_maker Import FakeMake``
+
+   ``fake = Fake_Make()``
+>>>>>>> 7639aa97c757e5aeb094a8fcde7869ad4e6ddd4b
 
    ``fake.personal_data(3)``
 
