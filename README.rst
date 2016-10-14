@@ -1,7 +1,7 @@
 Fake Maker
 ==========
 
-Easily make a CSV with individual personal data for as many rows as needed. Useful for testing applications that require user or customer data. Each row will contain separate columns for First_Name, Last_Name, Address, City, $
+Easily make a CSV with individual personal data for as many rows as needed. Useful for testing applications that require user or customer data. Each row will contain separate columns for First_Name, Last_Name, Address, City, State, Zip, Joined(date), Age, Gender, and Email.
 
 
 **Installation:**
