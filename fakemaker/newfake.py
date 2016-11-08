@@ -9,10 +9,10 @@ class Customer(object):
         self.gender = self._gender()
         self.first_name = self._first_name(self.gender)
         self.last_name = self.fake.last_name() 
-        self.age = str(randint(18, 90))
+        self.age = randint(18, 90)
         self.street_address = self.fake.street_address()
         self.state = self.fake.state_abbr()
-        self.zip_code = str(randint(10000, 99500))
+        self.zip_code = randint(10000, 99500)
         self.date = self.fake.date()
         self.email = self.fake.email()
 
