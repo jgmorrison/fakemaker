@@ -1,1 +1,1 @@
-from .fake import FakeMake
+import fakemaker.customer
