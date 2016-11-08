@@ -30,7 +30,10 @@ class Customer(object):
             return self.fake.first_name_female()
 
     def __repr__(self):
-        return "{}, {}, {}, {}, {}, {}, {}, {}, {}".format(self.last_name, self.first_name, self.age, self.gender, self.street_address, self.state, self.zip_code, self.date, self.email)
+        return "{0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}".format(
+		self.last_name, self.first_name, self.age, self.gender, 
+		self.street_address, self.state, self.zip_code, 
+		self.date, self.email)
 
 
 def printer(amount):
